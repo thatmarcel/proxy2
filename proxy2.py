@@ -97,7 +97,7 @@ class ProxyRequestHandler(BaseHTTPRequestHandler):
             s = socket.create_connection(address, timeout=self.timeout)
         except Exception as e:
             self.send_error(502)
-            return
+            print "lul"
         self.send_response(200, 'Connection Established')
         self.end_headers()
 
